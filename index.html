@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Makayla Student Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="login-page">
+
+
+<div class="login-box">
+
+
+<h1>
+Makayla Student Portal
+</h1>
+
+
+<p>
+Student Academic Information System
+</p>
+
+
+
+<input 
+id="email"
+placeholder="Student Email">
+
+
+<input
+id="password"
+type="password"
+placeholder="Password">
+
+
+
+<button onclick="login()">
+Login
+</button>
+
+
+<p id="error"></p>
+
+
+
+</div>
+
+
+
+
+<script>
+
+function login(){
+
+let email=document.getElementById("email").value;
+
+let password=document.getElementById("password").value;
+
+
+if(
+email=="makaylabrown@wgtstudent.edu"
+&&
+password=="Twilight55766!"
+)
+
+{
+
+window.location="dashboard.html";
+
+}
+
+
+else{
+
+document.getElementById("error").innerHTML=
+"Invalid login information";
+
+}
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
