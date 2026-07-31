@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin:0;
+    background:#eeeeee;
+    color:#222;
+}
+
+
+/* LOGIN */
+
+.login-page {
+
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+
+}
+
+
+.login-box {
+
+    background:white;
+    width:380px;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    border-top:8px solid #f5c400;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+
+
+.login-box h1 {
+
+    color:#111;
+
+}
+
+
+input {
+
+    width:100%;
+    padding:13px;
+    margin:10px 0;
+    border:1px solid #aaa;
+    border-radius:6px;
+
+}
+
+
+button {
+
+    width:100%;
+    padding:13px;
+    background:#f5c400;
+    color:#111;
+    border:none;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+
+}
+
+
+button:hover {
+
+    background:#d8aa00;
+
+}
+
+
+
+/* SIDEBAR */
+
+
+.sidebar {
+
+    position:fixed;
+    width:250px;
+    height:100vh;
+    background:#111;
+    padding:25px;
+    color:white;
+
+}
+
+
+.sidebar h2 {
+
+    text-align:center;
+    color:#f5c400;
+
+}
+
+
+.sidebar a {
+
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    margin:8px 0;
+
+}
+
+
+.sidebar a:hover {
+
+    background:#f5c400;
+    color:black;
+
+}
+
+
+
+/* HEADER */
+
+
+.header {
+
+    margin-left:250px;
+    background:#111;
+    color:white;
+    padding:25px;
+    border-bottom:5px solid #f5c400;
+
+}
+
+
+
+.main {
+
+    margin-left:250px;
+    padding:30px;
+
+}
+
+
+/* CARDS */
+
+
+.cards {
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+
+}
+
+
+
+.card {
+
+background:white;
+padding:25px;
+border-radius:10px;
+border-left:6px solid #f5c400;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+
+
+
+.card h1 {
+
+color:#111;
+
+}
+
+
+
+/* TABLES */
+
+
+table {
+
+width:100%;
+background:white;
+border-collapse:collapse;
+
+}
+
+
+th {
+
+background:#111;
+color:white;
+padding:14px;
+
+}
+
+
+td {
+
+padding:14px;
+border-bottom:1px solid #ddd;
+
+}
+
+
+
+/* CONTENT BOX */
+
+
+.box {
+
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+
+
+
+@media(max-width:800px){
+
+.sidebar{
+
+position:relative;
+width:100%;
+height:auto;
+
+}
+
+
+.header,.main{
+
+margin-left:0;
+
+}
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+}
